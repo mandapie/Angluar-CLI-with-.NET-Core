@@ -1,0 +1,1 @@
+{"version":3,"file":"movieDetail.component.js","sourceRoot":"","sources":["movieDetail.component.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAA0C;AAO1C;IAAA;IAAoC,CAAC;IAAxB,oBAAoB;QALhC,gBAAS,CAAC;YACT,QAAQ,EAAE,iBAAiB;YAC3B,WAAW,EAAE,8BAA8B;SAC5C,CAAC;OAEW,oBAAoB,CAAI;IAAD,2BAAC;CAAA,AAArC,IAAqC;AAAxB,oDAAoB"}
