@@ -23,7 +23,8 @@ import { MovieDetailComponent } from './movies/movieDetail.component';
     FetchDataComponent,
     MoviesComponent,
     MovieFilterPipe,
-    ReviewComponent
+    ReviewComponent,
+    MovieDetailComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -33,7 +34,9 @@ import { MovieDetailComponent } from './movies/movieDetail.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
-      { path: 'movies', component: MoviesComponent },
+      { path: 'movies', component: MoviesComponent }
+    ]),
+    RouterModule.forChild([
       { path: 'movies/:id', component: MovieDetailComponent }
     ])
   ],

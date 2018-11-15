@@ -27,17 +27,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\src\app\movies\movie.js" />
-    <None Remove="ClientApp\src\app\movies\movie.js" />
-    <None Remove="ClientApp\src\app\movies\movie.js.map" />
-    <None Remove="ClientApp\src\app\movies\movie.js.map" />
+    <None Remove="ClientApp\src\app\movies\movie.routing.js" />
+    <None Remove="ClientApp\src\app\movies\movie.routing.js" />
+    <None Remove="ClientApp\src\app\movies\movie.routing.js.map" />
+    <None Remove="ClientApp\src\app\movies\movie.routing.js.map" />
+    <None Remove="ClientApp\src\app\movies\movie.routing.ts" />
     <None Remove="ClientApp\src\app\movies\movie.service.js" />
     <None Remove="ClientApp\src\app\movies\movie.service.js" />
     <None Remove="ClientApp\src\app\movies\movie.service.js.map" />
     <None Remove="ClientApp\src\app\movies\movie.service.js.map" />
     <None Remove="ClientApp\src\app\movies\movie.service.ts" />
     <None Remove="ClientApp\src\app\movies\movie.service.ts" />
-    <None Remove="ClientApp\src\app\movies\movie.ts" />
     <None Remove="ClientApp\src\app\movies\movieDetail.component.ts" />
     <None Remove="ClientApp\src\app\movies\movieFilter.pipe.ts" />
     <None Remove="ClientApp\src\app\movies\movies.component.ts" />

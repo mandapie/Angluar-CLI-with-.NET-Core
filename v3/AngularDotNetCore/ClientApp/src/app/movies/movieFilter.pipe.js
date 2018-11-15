@@ -5,23 +5,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var MovieService = /** @class */ (function () {
-    function MovieService(http, baseUrl) {
-        http.get(baseUrl + 'api/Movies/GetMovies');
+var MovieFilterPipe = /** @class */ (function () {
+    function MovieFilterPipe() {
     }
-    MovieService.prototype.getMovies = function () {
-        return;
+    MovieFilterPipe.prototype.transform = function (movie, query) {
+        query = query ? query.toLocaleLowerCase() : null;
+        return query ? movie.filter(function (m) { return m.title.toLocaleLowerCase().match(query); }) : movie;
     };
-    MovieService = __decorate([
-        core_1.Injectable(),
-        __param(1, core_1.Inject('BASE_URL'))
-    ], MovieService);
-    return MovieService;
+    MovieFilterPipe = __decorate([
+        core_1.Pipe({
+            name: 'movieFilter'
+        })
+    ], MovieFilterPipe);
+    return MovieFilterPipe;
 }());
-exports.MovieService = MovieService;
-//# sourceMappingURL=movie.service.js.map
+exports.MovieFilterPipe = MovieFilterPipe;
+//# sourceMappingURL=movieFilter.pipe.js.map

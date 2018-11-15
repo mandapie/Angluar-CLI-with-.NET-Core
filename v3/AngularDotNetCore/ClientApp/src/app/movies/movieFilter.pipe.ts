@@ -8,6 +8,6 @@ import { IMovie } from "./movie";
 export class MovieFilterPipe implements PipeTransform {
   transform(movie: IMovie[], query: string): IMovie[] {
     query = query ? query.toLocaleLowerCase() : null;
-    return query ? movie.filter((m: IMovie) => { return m.title.toLocaleLowerCase().includes(query) }) : movie;
+    return query ? movie.filter((m: IMovie) => { return m.title.toLocaleLowerCase().match(query) }) : movie;
   }
 }
